@@ -1,0 +1,402 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*akhir css reset*/
+
+/*awal style*/
+.container {
+  width : 100%;
+  background-color : lightskyblue;
+  margin : auto;
+}
+
+.header {
+  background-color : #001C30;
+  padding : 20px;
+}
+
+.header .judul {
+  font-family: 'BebasNueue';
+  font-size : 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align : center;
+  color : cyan;
+}
+
+.judul-gallery {
+  text-align : center;
+  margin-left: 15px;
+  padding-top : 20px;
+  padding-bottom : 20px;
+  font-family : Arial;
+  font-weight: bold;
+  font-size : 25px;
+  color: #DAFFFB;
+  padding-right: 20px;
+}
+.navbar {
+  text-align: center;
+  background-color: #176B87;
+}
+
+.navbar ul li {
+  display : inline-block;
+  margin-top : 10px;
+  margin-bottom : 10px;
+}
+
+.navbar a {
+  font-family: Sans-Serif;
+  text-decoration: none;
+  color : #DAFFFB;
+  padding : 3px;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  background-color : lightgrey;
+  color : brown;
+}
+
+.hero {
+  height : 180px;
+  background-image: url(img/oikawa.jpeg);
+  background-size : cover;
+}
+
+.content {
+  background-color : #176B87;
+}
+
+.gallery {
+  display : flex;
+  justify-content : center;
+}
+
+.gallery li {
+  width : 85px;
+  height : 85px;
+  /*overflow : hidden;*/
+  border : 5px solid cyan;
+  margin-right: 20px;
+  position : relative;
+  left : 16px;
+}
+
+.gallery li,
+.gallery li img,
+.gallery li span {
+  border-radius : 50%;
+}
+
+.gallery li span {
+  display : block;
+  width : 85px;
+  height : 85px;
+  background-color : rgba(200,200,200,.5);
+  position : absolute;
+  top : 0;
+  text-align : center;
+  line-height : 85px;
+  color : cyan;
+  text-shadow : 1px 1px 1px lightsalmon;
+  opacity : 0;
+  transform : scale(0) rotate(0);
+  transition: .3s;
+}
+
+.gallery li a:hover span {
+  opacity : 1;
+  transform : scale(1) rotate(360deg);
+}
+
+.film {
+  font-family: Arial;
+  background-color : #DAFFFB;
+}
+
+.film h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #001C30;
+  text-align : center;
+  padding-top : 15px;
+}
+
+.film .judul-film {
+  font-size: 20px;
+  font-weight: bold;
+  color: brown;
+  text-align: center;
+}
+.film img {
+  width : 360px;
+  padding : 5px;
+  box-sizing : border-box;
+}
+
+.film p {
+  font-size : 20px;
+  word-spacing: 2px;
+  line-height: 25px;
+  text-align : left;
+  padding : 13px;
+}
+
+.song {
+  font-family: Arial;
+  text-align: center;
+  background-color: #176B87;
+}
+
+.song h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color : #64CCC5;
+  padding-top: 15px;
+}
+
+.song .judul-song {
+  font-size: 20px;
+  font-weight: bold;
+  color: #DAFFFB;
+}
+
+.song img {
+  width : 360px;
+  padding : 5px;
+  box-sizing : border-box;
+}
+
+.song p {
+  font-size : 20px;
+  word-spacing: 2px;
+  line-height: 25px;
+  text-align : left;
+  padding : 13px;
+}
+
+.game {
+  font-family: Arial;
+  background-color: #DAFFFB;
+  text-align : center;
+}
+
+.game h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: navy;
+  padding-top : 15px;
+}
+
+.game img {
+  width : 360px;
+  padding : 5px;
+  box-sizing : border-box;
+}
+
+.game p {
+  font-size : 20px;
+  word-spacing: 2px;
+  line-height: 25px;
+  text-align : left;
+  padding : 13px;
+}
+
+.game .judul-game {
+  font-size: 20px;
+  font-weight: bold;
+  color: brown;
+}
+
+.back {
+  text-align : center;
+}
+
+.footer {
+  color: #DAFFFB;
+  text-align: center;
+  padding-top: 12px;
+  background-color: #001C30;
+  
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media (min-width: 768px){
+  .gallery li,
+  .gallery li img,
+  .gallery li span {
+    width : 250px;
+    height: 250px;
+  }
+  .gallery li {
+    border : 15px solid cyan;
+  }
+  .gallery ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    height : 500px;
+  }
+  .film img {
+    width : 100%;
+  }
+  .song img {
+    width : 100%;
+  }
+  .game img {
+    width : 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clear {
+  clear : both;
+}
+/*font*/
+@font-face {
+  font-family:'BebasNueue'
+  src: url(../fonts/bebasneue-regular-webfont.woff) format('woff');
+}
+
+
+
+
+/*overlay*/
+.overlay {
+  width : 0;
+  height : 0;
+  overflow : hidden;
+  position : fixed;
+  top : 0;
+  left : 0;
+  background : rgba(0,0,0,0);
+  z-index : 9999;
+  transition : .8s;
+  text-align : center;
+  line-height : 500px;
+  padding-top : 70px;
+}
+
+.overlay:target {
+  width : auto;
+  height : auto;
+  bottom : 0;
+  right : 0;
+  background : rgba(0,0,0,.7);
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow : 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img {
+  animation: zoomDanFade 1s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 380px;
+  left: 50%;
+  margin-left: -20px;
+  color: white;
+  text-decoration: none;
+  opacity : 0 forwards;
+  
+}
+
+.overlay:target .close {
+  animation : slideDownFade .5s .5s;
+}
+/*animasi*/
+@keyframes zoomDanFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: 20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
